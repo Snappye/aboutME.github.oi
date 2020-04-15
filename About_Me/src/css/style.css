@@ -1,0 +1,429 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0009;
+    position: fixed;
+    padding: 0 50px;
+    width: 100%;
+    z-index: 3;
+    
+}
+
+.logo {
+    font-size: 16px;
+    padding: 25px;
+    text-transform: uppercase;
+    color: #f5f5f5;
+    
+}
+
+.list  {
+    display: flex;
+    padding: 25px;
+    font-size: 16px;
+}
+
+.list  .list_link {
+    margin-left: 70px;
+    text-decoration: none;
+    color: #ffffff ;
+}
+
+.list  .list_link:hover {
+    color: #c44a4a;
+    transition: 0.5s;
+}
+
+.main_info {
+    background: url(/src/img/bg/city_bg.jpg)center center/cover no-repeat;
+    min-height: 750px;
+}
+
+.info_box {
+    position: absolute;
+    top: 260px;
+    left: 200px;
+}
+
+.name_info {
+    font-size: 40px;
+    color: white;
+}
+
+.info_box .name_info .name {
+    color: #c44a4a;
+}
+
+.info_skil {
+    margin-top: 10px;
+    color: #9e9e9e;
+}
+
+.contact_btn {
+    margin-top: 50px;
+    background: #0005;
+    border-color: #c44a4a;
+}
+.contact_btn a {
+    display: block;
+    padding: 12px 25px;
+    color:  #c44a4a;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.6s;
+
+}
+
+.contact_btn a:hover {
+    color: #333131;
+    background: #c54646;
+    box-shadow: 0 0 10px #c44a4a,  0 0 40px #c44a4a, 0 0 80px #c44a4a;
+}
+
+.main_foto  {
+    display: inline-block;
+    position: absolute;
+    right: 280px;
+    top: 170px;
+    background: url(/src/img/Its_ME.JPG) center center/cover no-repeat;
+    height: 500px;
+    width: 350px;
+}
+
+.info_about_me {
+    position: relative;
+    background:  #333131;
+    min-height: 750px;
+}
+
+.info_about_me .about {
+    position: absolute;
+    color: #c44a4a;
+    font-size: 100px;
+    margin-top: 130px;
+    margin-left: 40px;
+    text-shadow:  0 0 10px #9e9e9e;
+}
+
+.info_about_me .about_me {
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 200px;
+    width: 1000px;
+    min-height: 200px;
+    padding: 50px 50px;
+    font-size: 20px;
+    color: white;
+    background-color: #2d3436;
+    box-shadow: 0 0 10px #202020,  0 0 40px #272626, 0 0 80px #242424;
+    z-index: 1;
+}
+
+.under_info {
+    position: absolute;
+    padding: 30px;
+    right:  300px;
+    bottom: 90px;
+    width: 300px;
+    height: 300px;
+}
+
+.under_info .red_dot {
+    display: inline-block;
+    margin: 8px;
+    width: 10px;
+    height: 10px;
+    background-color: #c44a4a;
+    border-radius: 100%;
+}
+
+.my_works {
+    width: 100%;
+    min-height: 700px;
+    background-color: #2d3436;
+}
+
+.header { 
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    color: #fff;
+
+}
+
+.line {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 3px;
+    margin-top: 20px;
+    background-color: #c44a4a;
+    border-radius: 100%;
+}
+
+.line:nth-child(1){
+    margin-top: 40px;
+}
+
+.works_item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.my_works .slider .slider__item img {
+    width: 300px;
+    height: 250px;
+}
+
+.wrapper {
+    height: 100%;
+    padding: 50px;
+}
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+
+
+.slider {
+    position: relative;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 0;
+    text-decoration: none;
+    width: 40px;
+    height: 60px;
+    border: none;
+    
+}
+
+.slider .slick-arrow.slick-prev {
+    left: -65px;
+    background: url(/src/icons/left.svg) center center/cover  no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+    right: -45px;
+    background: url(/src/icons/right.svg) center center/cover   no-repeat;
+}
+
+.slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider .slick-dots li{
+    list-style: none;
+    margin: 0 10px;
+}
+.slider .slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    border: none;
+     
+}
+
+.slider .slick-dots li.slick-active button{
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+
+.contact {
+    position: relative;
+    height: 700px;
+    background: url(https://img3.akspic.ru/image/102397-les-gora-otrazhenie-dikaya_mestnost-priroda-1920x1080.jpg) center center/cover no-repeat
+}
+
+.contact .contact_form {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    padding: 50px 30px;
+    text-align: center;
+    width:500px;
+    min-height: 500px;
+    background-color: #0008;
+}
+
+.contact .contact_form .contact_header {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+}
+
+.contact .contact_form .text_btn {
+    border: 1px solid #c44a4a;
+    margin: 16px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.contact .contact_form .text_btn label {
+    display: block;
+    text-align: left;
+    color: white;
+}
+
+.contact .contact_form .text_btn input , textarea {
+    width: 100%;
+    border: none;
+    color: white;
+    border-bottom: 1px solid #c44a4a;
+    background: none;
+    outline: none;
+}
+
+
+.contacts_btn {
+    background: #0001;
+    border-color: #c44a4a;
+    width: 50%;
+}
+
+.contacts_btn a {
+    display: block;
+    padding: 12px 25px;
+    color:  #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.6s;
+
+}
+
+.contacts_btn a:hover {
+    color: #333131;
+    background: #c44a4a;
+    box-shadow: 0 0 10px #c44a4a,  0 0 30px #c44a4a, 0 0 60px #c44a4a;
+}
+
+.footer_contact {
+    height: 90px;
+    width: 100%;
+    background-color: #2d3436;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_wrapper {
+    width: 100%;
+}
+
+.footer_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ 
+.footer_icon {
+    margin: 0 20px;
+}
+
+.footer_wrapper {
+    width: 50%;
+}
+
+.footer_social {
+    width: 50%;
+}
+
+
+.footer_icon .btn_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 35%;
+    box-shadow:  0 15px 25px -10px #eee2e2;
+    background-color: #ecf0f1;
+    color: #686de0;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+.footer_phone {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
